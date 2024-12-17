@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('actionshw');  // Импорт вашего приложения
+const app = require('../actionshw');  // Импорт вашего приложения
 it('responds with Ya lublu shavel', async () => {
   const response = await request(app).get('/'); // Просто вызываем app, чтобы получить запрос
   expect(response.statusCode).toBe(200);
